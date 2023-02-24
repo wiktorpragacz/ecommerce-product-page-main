@@ -15,7 +15,7 @@ function addToCart() {
 
   showPopup('add');
   cartProductContainer.innerHTML = `<div class="cart-product">
-  <img src="../images/image-product-1.jpg" alt="pair of shoes">
+  <img src="./images/image-product-1.jpg" alt="pair of shoes">
   <div class="cart-product-details">
     <p>Fall Limited Edition Sneakers</p>
     <p>$125.00 x <span class="product-amount">${
@@ -24,7 +24,7 @@ function addToCart() {
     quantity.textContent * PRODUCT_PRICE
   }</span> </p>
   </div>
-  <img class="delete-btn" src="../images/icon-delete.svg" alt="trash delete button">
+  <img class="delete-btn" src="./images/icon-delete.svg" alt="trash delete button">
 </div>
 <div class="cart-checkout-section">
               <div class="checkout-btn"><p>Checkout</p></div>

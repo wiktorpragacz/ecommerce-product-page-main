@@ -10,7 +10,7 @@ function showPopup(action) {
       alert.remove();
     }, 1500);
   } else if (action === "add") {
-    alert.innerHTML = "<p>Product added</p>";
+    alert.innerHTML = "<p>Product added to cart</p>";
     alert.classList.add("add-popup");
     document.body.append(alert);
     setTimeout(() => {

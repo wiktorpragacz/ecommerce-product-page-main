@@ -244,8 +244,16 @@ a:visited {
   display: none;
 }
 
+.thumbnail-photo {
+  border-radius: 1rem;
+}
+
 .photos-section {
   position: relative;
+}
+
+.photos-set > img {
+  border-radius: 1rem;
 }
 
 .slide-btn {

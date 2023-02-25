@@ -177,6 +177,7 @@ a:visited {
   font-weight: bolder;
   border-radius: 0.6rem;
   background: var(--orange);
+  padding-bottom: 5px;
 }
 .checkout-btn:hover {
   opacity: 0.8;

@@ -13,7 +13,7 @@ deacrease.addEventListener("click", decreaseQuantity);
 function addToCart() {
   const PRODUCT_PRICE = 125;
 
-  showPopup('add');
+  showPopup("add");
   cartProductContainer.innerHTML = `<div class="cart-product">
   <img src="./images/image-product-1.jpg" alt="pair of shoes">
   <div class="cart-product-details">
@@ -29,16 +29,14 @@ function addToCart() {
 <div class="cart-checkout-section">
               <div class="checkout-btn"><p>Checkout</p></div>
             </div>`;
-  const deleteProductBtn = document.querySelector('.delete-btn');
-  deleteProductBtn.addEventListener('click', deleteProduct);
-
+  const deleteProductBtn = document.querySelector(".delete-btn");
+  deleteProductBtn.addEventListener("click", deleteProduct);
 }
 
 function deleteProduct() {
-  showPopup('delete')
-  cartProductContainer.innerHTML = '<p>Your cart is empty</p>'
+  showPopup("delete");
+  cartProductContainer.innerHTML = "<p>Your cart is empty</p>";
 }
-
 
 function increaseQuantity() {
   quantity.textContent++;
@@ -55,5 +53,3 @@ function decreaseQuantity() {
     quantity.textContent = 1;
   }
 }
-
-

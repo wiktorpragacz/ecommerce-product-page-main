@@ -16,6 +16,14 @@ function showMenu() {
   bodyBlur.classList.toggle("show");
 }
 
+window.addEventListener("click", (e) => {
+  if (menu.classList.contains("show-menu")) {
+    if (!e.target.matches(".menu") && !e.target.matches(".mbtn")) {
+      showMenu();
+    }
+  }
+});
+
 function setIcon() {
   menu.classList.contains("show-menu")
     ? menuIcon.setAttribute("src", "./images/icon-menu.svg")

@@ -1,12 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap");
 
-@font-face {
-  font-family: 'Rubik';
-  src: url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
-  font-style: normal;
-  font-weight: 100;
-}
-
 :root {
   /* primary */
   --orange: hsl(26, 100%, 55%);
@@ -18,8 +11,15 @@
   --light-grayish-blue: hsl(223, 64%, 98%);
   --white: hsl(0, 0%, 100%);
 }
-
 /* general styles */
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+  font-style: normal;
+  font-weight: 100;
+}
+
 *,
 *::after,
 *::before {

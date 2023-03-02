@@ -11,6 +11,7 @@ increase.addEventListener("click", increaseQuantity);
 deacrease.addEventListener("click", decreaseQuantity);
 
 function addToCart() {
+  cart.focus()
   const PRODUCT_PRICE = 125;
 
   showPopup("add");

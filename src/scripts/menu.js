@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { cart } from "./cart.js";
 
 const menuBtn = document.querySelector(".menu-btn");

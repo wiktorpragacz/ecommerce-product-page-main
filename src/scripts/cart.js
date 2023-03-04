@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 export { cart };
 export { cartProductContainer };
 

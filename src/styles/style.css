@@ -215,7 +215,7 @@ a:visited {
   transform: translateX(0);
 }
 
-.show-menu-body {
+.hide-overflow {
   overflow: hidden;
 }
 
@@ -421,6 +421,81 @@ a:visited {
   background: rgb(15, 174, 7);
   color: rgb(21, 73, 16);
 }
+/* lightbox */
+.lightbox-container {
+  min-width: 100vw;
+  min-height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+}
+
+.lightbox-main-photo {
+  width: 50vw; 
+  max-width: 500px;
+  border-radius: 1rem;
+}
+
+.lightbox-thumbnail-photos {
+  width: 50vw;
+  max-width: 500px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 1rem;
+}
+
+.lightbox-thumbnail-photos > img {
+  width: 100%;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+.lightbox-thumbnail-photos > img:hover {
+  opacity: .9;
+}
+
+.main-photo-container {
+  position: relative;
+  width: max-content;
+}
+
+.next-btn-thumbnail {
+  right: -13px;
+}
+
+.prev-btn-thumbnail {
+  left: -25px;
+}
+
+.next-btn-thumbnail,
+.prev-btn-thumbnail {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--white);
+  padding: 1rem;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.close-btn-lightbox {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  width: 25px;
+}
+
+.show-lightbox {
+  display: flex;
+}
+
 
 @keyframes show-popup {
   0% {

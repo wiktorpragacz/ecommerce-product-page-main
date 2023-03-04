@@ -24,6 +24,27 @@
     <link rel="stylesheet" href="./src/styles/style.css" />
   </head>
   <body>
+    <div class="lightbox-container">
+      <div class="main-photo-container">
+        <img src="./images/image-product-1.jpg" alt="lightbox photo" class="lightbox-main-photo">
+        <button aria-label="show next photo">
+          <img src="./images/icon-next.svg" alt="next lightbox photo" class="next-btn-thumbnail thumbnail-btn">
+        </button>
+        <button aria-label="show previous photo">
+          <img src="./images/icon-previous.svg" alt="previous lightbox photo" class="prev-btn-thumbnail thumbnail-btn">
+        </button>
+        <button aria-label="close lighbox">
+          <img src="./images/icon-close2.svg" alt="close lighbox" class="close-btn-lightbox">
+        </button>
+      </div>
+      <div class="lightbox-thumbnail-photos">
+        <img src="./images/image-product-1-thumbnail.jpg" alt="lightbox thumbnail photo" class="lightbox-thumbnail-photo">   
+        <img src="./images/image-product-2-thumbnail.jpg" alt="lightbox thumbnail photo" class="lightbox-thumbnail-photo">
+        <img src="./images/image-product-3-thumbnail.jpg" alt="lightbox thumbnail photo" class="lightbox-thumbnail-photo">
+        <img src="./images/image-product-4-thumbnail.jpg" alt="lightbox thumbnail photo" class="lightbox-thumbnail-photo">
+      </div>
+    </div>
+
     <!-- HEADER -->
     <header id="header">
       <div>
@@ -89,34 +110,34 @@
           </button>
           <img src="./images/image-product-1.jpg" alt="pair of shoes" />
           <div class="photos-bottom-section">
-            <a href="./images/image-product-1.jpg" data-lightbox="photos-set">
+            <!-- <a href="./images/image-product-1.jpg" data-lightbox="photos-set"> -->
               <img
                 src="./images/image-product-1-thumbnail.jpg"
                 class="thumbnail-photo"
                 alt="thumbnail 1 fall limited edition sneakers"
               />
-            </a>
-            <a href="./images/image-product-2.jpg" data-lightbox="photos-set">
+            <!-- </a> -->
+            <!-- <a href="./images/image-product-2.jpg" data-lightbox="photos-set"> -->
               <img
                 src="./images/image-product-2-thumbnail.jpg"
                 class="thumbnail-photo"
                 alt="thumbnail 2 fall limited edition sneakers"
               />
-            </a>
-            <a href="./images/image-product-3.jpg" data-lightbox="photos-set">
+            <!-- </a> -->
+            <!-- <a href="./images/image-product-3.jpg" data-lightbox="photos-set"> -->
               <img
                 src="./images/image-product-3-thumbnail.jpg"
                 class="thumbnail-photo"
                 alt="thumbnail 3 fall limited edition sneakers"
               />
-            </a>
-            <a href="./images/image-product-4.jpg" data-lightbox="photos-set">
+            <!-- </a> -->
+            <!-- <a href="./images/image-product-4.jpg" data-lightbox="photos-set"> -->
               <img
                 src="./images/image-product-4-thumbnail.jpg"
                 class="thumbnail-photo"
                 alt="thumbnail 4 fall limited edition sneakers"
               />
-            </a>
+            <!-- </a> -->
           </div>
         </section>
         <section class="product-details">
@@ -155,15 +176,6 @@
     <script type="module" src="./src/scripts/cart.js"></script>
     <script type="module" src="./src/scripts/app.js"></script>
     <script type="module" src="./src/scripts/slider.js"></script>
-    <script src="./dist/js/lightbox-plus-jquery.min.js"></script>
-    <script>
-      lightbox.option({
-        resizeDuration: 0,
-        wrapAround: true,
-        disableScrolling: true,
-        fadeDuration: 500,
-        imageFadeDuration: 0,
-      });
-    </script>
+    <script type="module" src="./src/scripts/lightbox.js"></script>
   </body>
 </html>

@@ -1,3 +1,5 @@
+export { formatThumbnailSrc };
+
 //       mobile photo slider
 const image = document.querySelector(".photos-section > img");
 const slideBtn = document.querySelectorAll(".slide-btn");
@@ -52,8 +54,8 @@ function setMainPhoto(e) {
   );
   const currentThumbnail = e.target;
   currentThumbnail.classList.add("active-photo");
-  // remove'-thumbnail' from thumbail photo url
-  const correctSrc = currentThumbnail.src.replace("-thumbnail", "");
+  // remove'-thumbnail' from thumbnail photo url
+  const correctSrc = formatThumbnailSrc(currentThumbnail)
   image.setAttribute("src", correctSrc);
 }
 
@@ -62,4 +64,8 @@ function removeActiveClass() {
     photo.classList.remove("active-photo")
   );
   thumbnailPhoto[photoID - 1].classList.add("active-photo");
+}
+
+function formatThumbnailSrc(thumbnail) {
+  return thumbnail.getAttribute('src').replace("-thumbnail", "")
 }

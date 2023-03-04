@@ -53,3 +53,4 @@ function decreaseQuantity() {
     quantity.textContent = 1;
   }
 }
+

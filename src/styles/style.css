@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap");
 
 :root {
@@ -452,9 +453,9 @@ a:visited {
 }
 
 .lightbox-thumbnail-photos > img {
-  width: 100%;
-  padding: 0 1rem;
+  width: 90%;
   cursor: pointer;
+  border-radius: 1rem;
 }
 
 .lightbox-thumbnail-photos > img:hover {
@@ -472,6 +473,10 @@ a:visited {
 
 .prev-btn-thumbnail {
   left: -25px;
+}
+
+.active-thumbnail {
+  border: 2px solid var(--orange);
 }
 
 .next-btn-thumbnail,
@@ -631,3 +636,4 @@ a:visited {
     width: 100%;
   }
 }
+

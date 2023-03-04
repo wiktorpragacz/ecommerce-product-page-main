@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { cart } from "./cart.js";
 
 const menuBtn = document.querySelector(".menu-btn");
@@ -29,3 +30,4 @@ function setIcon() {
     ? menuIcon.setAttribute("src", "./images/icon-menu.svg")
     : menuIcon.setAttribute("src", "./images/icon-close.svg");
 }
+

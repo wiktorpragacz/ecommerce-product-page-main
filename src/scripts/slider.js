@@ -69,3 +69,4 @@ function removeActiveClass() {
 function formatThumbnailSrc(thumbnail) {
   return thumbnail.getAttribute('src').replace("-thumbnail", "")
 }
+

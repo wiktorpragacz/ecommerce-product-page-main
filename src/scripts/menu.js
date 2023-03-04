@@ -12,7 +12,7 @@ function showMenu() {
   cart.classList.remove("show-cart");
   window.scrollTo(0, 0);
   menu.classList.toggle("show-menu");
-  document.body.classList.toggle("show-menu-body");
+  document.body.classList.toggle("hide-overflow");
   bodyBlur.classList.toggle("show");
 }
 

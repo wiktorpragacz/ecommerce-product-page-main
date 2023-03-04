@@ -7,5 +7,4 @@
 - CSS
 - JavaScript
 - RWD
-- lightbox (https://lokeshdhakar.com/projects/lightbox2/)
 

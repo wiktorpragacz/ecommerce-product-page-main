@@ -1,4 +1,3 @@
-
 export default showPopup;
 
 function showPopup(action) {
